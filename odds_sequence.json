@@ -1,0 +1,32 @@
+[
+  {
+    "round": 1,
+    "probability": 1,
+    "yesPool": "0.1",
+    "noPool": "0.0"
+  },
+  {
+    "round": 2,
+    "probability": 0.5,
+    "yesPool": "0.1",
+    "noPool": "0.1"
+  },
+  {
+    "round": 3,
+    "probability": 0.6666666666666666,
+    "yesPool": "0.2",
+    "noPool": "0.1"
+  },
+  {
+    "round": 4,
+    "probability": 0.5,
+    "yesPool": "0.2",
+    "noPool": "0.2"
+  },
+  {
+    "round": 5,
+    "probability": 0.6,
+    "yesPool": "0.3",
+    "noPool": "0.2"
+  }
+]

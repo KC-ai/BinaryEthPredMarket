@@ -1,0 +1,6 @@
+market "Question" {  
+  outcomes: Yes, No;  
+  oracle: 0xABC...;  
+  fee: 1%;  
+  trading_mechanism: pool;  
+}  

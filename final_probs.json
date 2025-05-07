@@ -1,0 +1,452 @@
+[
+  {
+    "run": 1,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 2,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 3,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 4,
+    "p_final": 0.9,
+    "outcome": "1",
+    "yesSignals": 9,
+    "noSignals": 1,
+    "yesPool": "0.9",
+    "noPool": "0.1"
+  },
+  {
+    "run": 5,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 6,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 7,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 8,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 9,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 10,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 11,
+    "p_final": 0.9,
+    "outcome": "1",
+    "yesSignals": 9,
+    "noSignals": 1,
+    "yesPool": "0.9",
+    "noPool": "0.1"
+  },
+  {
+    "run": 12,
+    "p_final": 0.9,
+    "outcome": "1",
+    "yesSignals": 9,
+    "noSignals": 1,
+    "yesPool": "0.9",
+    "noPool": "0.1"
+  },
+  {
+    "run": 13,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 14,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 15,
+    "p_final": 0.9,
+    "outcome": "1",
+    "yesSignals": 9,
+    "noSignals": 1,
+    "yesPool": "0.9",
+    "noPool": "0.1"
+  },
+  {
+    "run": 16,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 17,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 18,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 19,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 20,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 21,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 22,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 23,
+    "p_final": 0.5,
+    "outcome": "0",
+    "yesSignals": 5,
+    "noSignals": 5,
+    "yesPool": "0.5",
+    "noPool": "0.5"
+  },
+  {
+    "run": 24,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 25,
+    "p_final": 0.4,
+    "outcome": "0",
+    "yesSignals": 4,
+    "noSignals": 6,
+    "yesPool": "0.4",
+    "noPool": "0.6"
+  },
+  {
+    "run": 26,
+    "p_final": 0.9,
+    "outcome": "1",
+    "yesSignals": 9,
+    "noSignals": 1,
+    "yesPool": "0.9",
+    "noPool": "0.1"
+  },
+  {
+    "run": 27,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 28,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 29,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 30,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 31,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 32,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 33,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 34,
+    "p_final": 0.5,
+    "outcome": "0",
+    "yesSignals": 5,
+    "noSignals": 5,
+    "yesPool": "0.5",
+    "noPool": "0.5"
+  },
+  {
+    "run": 35,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 36,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 37,
+    "p_final": 0.5,
+    "outcome": "0",
+    "yesSignals": 5,
+    "noSignals": 5,
+    "yesPool": "0.5",
+    "noPool": "0.5"
+  },
+  {
+    "run": 38,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 39,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 40,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 41,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 42,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 43,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 44,
+    "p_final": 0.3,
+    "outcome": "0",
+    "yesSignals": 3,
+    "noSignals": 7,
+    "yesPool": "0.3",
+    "noPool": "0.7"
+  },
+  {
+    "run": 45,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 46,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  },
+  {
+    "run": 47,
+    "p_final": 0.7,
+    "outcome": "1",
+    "yesSignals": 7,
+    "noSignals": 3,
+    "yesPool": "0.7",
+    "noPool": "0.3"
+  },
+  {
+    "run": 48,
+    "p_final": 1,
+    "outcome": "1",
+    "yesSignals": 10,
+    "noSignals": 0,
+    "yesPool": "1.0",
+    "noPool": "0.0"
+  },
+  {
+    "run": 49,
+    "p_final": 0.8,
+    "outcome": "1",
+    "yesSignals": 8,
+    "noSignals": 2,
+    "yesPool": "0.8",
+    "noPool": "0.2"
+  },
+  {
+    "run": 50,
+    "p_final": 0.6,
+    "outcome": "1",
+    "yesSignals": 6,
+    "noSignals": 4,
+    "yesPool": "0.6",
+    "noPool": "0.4"
+  }
+]
