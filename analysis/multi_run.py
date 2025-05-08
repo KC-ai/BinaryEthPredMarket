@@ -5,7 +5,7 @@ from typing import List, Tuple
 
 def load_results() -> Tuple[List[float], List[int]]:
     """Load and parse the simulation results from JSON."""
-    with open('final_probs.json', 'r') as f:
+    with open('data/final_probs.json', 'r') as f:
         data = json.load(f)
     
     # Extract probabilities and convert outcomes to binary
@@ -89,7 +89,7 @@ def plot_reliability_diagram(bin_centers: List[float], empirical_freqs: List[flo
     plt.yticks(np.linspace(0, 1, 11))
     
     # Save plot
-    plt.savefig('market_reliability_diagram.png', dpi=300, bbox_inches='tight')
+    plt.savefig('data/multi_run_reliability.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 def main():
@@ -117,7 +117,7 @@ def main():
     
     # Plot reliability diagram
     plot_reliability_diagram(bin_centers, empirical_freqs, bin_counts, ece, brier)
-    print("\nReliability diagram saved as 'market_reliability_diagram.png'")
+    print("\nReliability diagram saved as '../data/multi_run_reliability.png'")
 
 if __name__ == "__main__":
     main() 

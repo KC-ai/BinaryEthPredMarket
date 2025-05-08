@@ -3,17 +3,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 from typing import List, Tuple
 
-def load_sequence() -> List[dict]:
-    """Load and parse the odds sequence from JSON."""
-    with open('odds_sequence.json', 'r') as f:
+def load_results() -> Tuple[List[float], List[int]]:
+    """Load and parse the simulation results from JSON."""
+    with open('data/odds_sequence.json', 'r') as f:
         data = json.load(f)
     
-    # Convert string ETH amounts to floats
-    for entry in data:
-        entry['yesPool'] = float(entry['yesPool'])
-        entry['noPool'] = float(entry['noPool'])
+    # Extract probabilities and convert outcomes to binary
+    probabilities = [entry['p_final'] for entry in data]
+    outcomes = [1 if entry['outcome'] == 'Yes' else 0 for entry in data]
     
-    return data
+    return probabilities, outcomes
 
 def simulate_outcomes(probabilities: List[float], p_true: float, n_simulations: int = 1000) -> List[Tuple[float, float]]:
     """Simulate market outcomes for each probability."""
@@ -67,25 +66,40 @@ def compute_calibration_metrics(x_t: List[float], y_t: List[float], n_bins: int 
     
     return ece, brier, bin_centers, empirical_freqs, bin_counts
 
-def plot_reliability_diagram(bin_centers: List[float], empirical_freqs: List[float], ece: float, brier: float):
+def plot_reliability_diagram(bin_centers: List[float], empirical_freqs: List[float], bin_counts: List[int], ece: float, brier: float):
     """Plot the reliability diagram with calibration metrics."""
-    plt.figure(figsize=(8, 8))
+    plt.figure(figsize=(10, 8))
     
     # Plot diagonal (perfect calibration)
     plt.plot([0, 1], [0, 1], 'k--', label='Perfect calibration')
     
     # Plot calibration points
-    plt.scatter(bin_centers, empirical_freqs, c='blue', label='Calibration points')
+    plt.scatter(bin_centers, empirical_freqs, c='blue', s=100, label='Calibration points')
+    
+    # Add error bars (binomial confidence intervals)
+    n = len(bin_centers)
+    for i in range(n):
+        p = empirical_freqs[i]
+        n_samples = bin_counts[i]
+        if n_samples > 0:
+            ci = 1.96 * np.sqrt(p * (1-p) / n_samples)  # 95% confidence interval
+            plt.errorbar(bin_centers[i], p, yerr=ci, fmt='none', color='blue', alpha=0.3)
     
     # Add labels and title
-    plt.xlabel('Predicted Probability')
-    plt.ylabel('Empirical Frequency')
-    plt.title(f'Reliability Diagram\nECE = {ece:.3f}, Brier = {brier:.3f}')
-    plt.legend()
-    plt.grid(True)
+    plt.xlabel('Predicted Probability (Market Price)', fontsize=12)
+    plt.ylabel('Empirical Frequency (Actual Outcomes)', fontsize=12)
+    plt.title(f'Market Reliability Diagram\nECE = {ece:.3f}, Brier = {brier:.3f}', fontsize=14)
+    plt.legend(fontsize=12)
+    plt.grid(True, alpha=0.3)
+    
+    # Set axis limits and ticks
+    plt.xlim(-0.05, 1.05)
+    plt.ylim(-0.05, 1.05)
+    plt.xticks(np.linspace(0, 1, 11))
+    plt.yticks(np.linspace(0, 1, 11))
     
     # Save plot
-    plt.savefig('reliability_diagram.png')
+    plt.savefig('data/single_run_reliability.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 def main():
@@ -94,8 +108,7 @@ def main():
     n_simulations = 1000  # Number of simulations per probability
     
     # Load and process data
-    sequence = load_sequence()
-    probabilities = [entry['probability'] for entry in sequence]
+    probabilities, outcomes = load_results()
     
     # Simulate outcomes
     results = simulate_outcomes(probabilities, p_true, n_simulations)
@@ -117,8 +130,8 @@ def main():
         print(f"  Count: {bin_counts[i]}")
     
     # Plot reliability diagram
-    plot_reliability_diagram(bin_centers, empirical_freqs, ece, brier)
-    print("\nReliability diagram saved as 'reliability_diagram.png'")
+    plot_reliability_diagram(bin_centers, empirical_freqs, bin_counts, ece, brier)
+    print("\nReliability diagram saved as 'data/single_run_reliability.png'")
 
 if __name__ == "__main__":
     main() 
